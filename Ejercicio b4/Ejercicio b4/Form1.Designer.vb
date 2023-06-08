@@ -22,10 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        btEjecutar = New Button()
+        lstMostrarPares = New ListBox()
+        Label1 = New Label()
+        SuspendLayout()
+        ' 
+        ' btEjecutar
+        ' 
+        btEjecutar.Location = New Point(48, 42)
+        btEjecutar.Name = "btEjecutar"
+        btEjecutar.Size = New Size(155, 40)
+        btEjecutar.TabIndex = 0
+        btEjecutar.Text = "Ejecutar"
+        btEjecutar.UseVisualStyleBackColor = True
+        ' 
+        ' lstMostrarPares
+        ' 
+        lstMostrarPares.FormattingEnabled = True
+        lstMostrarPares.ItemHeight = 20
+        lstMostrarPares.Location = New Point(297, 23)
+        lstMostrarPares.Name = "lstMostrarPares"
+        lstMostrarPares.Size = New Size(122, 424)
+        lstMostrarPares.TabIndex = 1
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(284, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(162, 20)
+        Label1.TabIndex = 2
+        Label1.Text = "Los numeros pares son:"
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Label1)
+        Controls.Add(lstMostrarPares)
+        Controls.Add(btEjecutar)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
+    Friend WithEvents btEjecutar As Button
+    Friend WithEvents lstMostrarPares As ListBox
+    Friend WithEvents Label1 As Label
 End Class
